@@ -37,3 +37,12 @@ function SearchInput({ onSearch }: { onSearch: (q: string) => void }) {
   }, [query])
 }
 ```
+
+**Why this matters:**
+
+`useEffectEvent` creates a stable function identity that always calls the latest version of the handler, preventing effect re-runs while avoiding stale closures. This eliminates the need to list callback functions in dependency arrays.
+
+**References:**
+
+- [React useEffectEvent](https://react.dev/reference/react/useEffectEvent)
+```
