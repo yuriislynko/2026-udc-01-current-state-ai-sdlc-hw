@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "deny": [
+      "node_modules/**",
+      ".next/**",
+      "*.lock",
+      ".env*"
+    ]
+  }
+}
